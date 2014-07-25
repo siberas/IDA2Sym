@@ -17,6 +17,7 @@ Usage
 ---
 The python script creates sym-entries only for functions which name ends with '_SYM'.
 So you have to rename the functions you want symbol entries for, e.g. DEADBEEF_sub_fffff**_SYM**.
+
 To create a symbol file ues the following command (**be sure to run the script IdaSym.py before**):
 ```
 Python>SaveSyms(AllSyms())
