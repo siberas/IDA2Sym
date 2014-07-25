@@ -18,17 +18,17 @@ Usage
 The python script creates sym-entries only for functions which name ends with '_SYM'.
 So you have to rename the functions you want symbol entries for, e.g. DEADBEEF_sub_fffff**_SYM**.
 To create a symbol file ues the following command (**be sure to run the script IdaSym.py before**):
-'''
+```
 Python>SaveSyms(AllSyms())
 >> 131 syms written to G:\IDAs\YourBin\YourBin.sym
-'''
+```
 If you don't give a filename the default location of the symbols file will be created in your binary location.
 
 To use the symbols in WinDbg use these commands:
-'''
+```
 .load addsym
 !addsym <modname> <path-of-file> 
-'''
+```
 
 License
 ---
